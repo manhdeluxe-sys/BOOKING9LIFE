@@ -220,3 +220,23 @@ a {
 .lang-switch button:hover {
   color: var(--gold);
 }
+/* ===== ABOUT PAGE ===== */
+.page-about {
+  padding-top: 140px;
+}
+
+.about-location {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.about-location h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.map-box {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
