@@ -202,3 +202,21 @@ a {
     height: 32px;
   }
 }
+/* ===== LANGUAGE SWITCH ===== */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  color: var(--gold);
+}
