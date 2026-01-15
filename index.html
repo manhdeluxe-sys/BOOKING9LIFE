@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Manh Deluxe | Nightlife Luxury</title>
 
   <!-- Google Fonts -->
@@ -22,17 +21,17 @@
 
     <!-- LOGO -->
     <div class="logo">
-      <a href="#home">
+      <a href="index.html">
         <img src="assets/logo.jpg" alt="Manh Deluxe Logo">
       </a>
     </div>
 
     <!-- NAV -->
     <nav class="nav">
-      <a href="#home" data-en="Home" data-vi="Trang Chủ">Home</a>
-      <a href="#about" data-en="About" data-vi="Giới Thiệu">About</a>
-      <a href="#experience" data-en="Experience" data-vi="Trải Nghiệm">Experience</a>
-      <a href="#contact" data-en="Contact" data-vi="Liên Hệ">Contact</a>
+      <a href="index.html" data-en="Home" data-vi="Trang Chủ">Home</a>
+      <a href="about.html" data-en="About" data-vi="Giới Thiệu">About</a>
+      <a href="experience.html" data-en="Experience" data-vi="Trải Nghiệm">Experience</a>
+      <a href="contact.html" data-en="Contact" data-vi="Liên Hệ">Contact</a>
     </nav>
 
     <!-- LANGUAGE SWITCH -->
@@ -46,7 +45,7 @@
 </header>
 
 <!-- ===== HERO ===== -->
-<section id="home" class="hero">
+<section class="hero">
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
@@ -60,96 +59,10 @@
       data-vi="Tinh Tế • Nhịp Điệu • Đêm Độc Quyền">
     </p>
 
-   <a href="tel:0899996977" class="btn-primary"
-  data-en="Call to Reserve a Table"
-  data-vi="Gọi Trực Tiếp Đặt Bàn">
-  Gọi Trực Tiếp Đặt Bàn
-</a>
-
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section">
-  <div class="container narrow">
-    <h2 class="section-title"
-      data-en="About"
-      data-vi="Giới Thiệu">
-      About
-    </h2>
-
-    <p class="section-text"
-      data-en="Manh Deluxe is a premium nightlife brand delivering sophisticated, elegant and unforgettable night experiences."
-      data-vi="Manh Deluxe là thương hiệu nightlife cao cấp, mang đến trải nghiệm đêm sang trọng, tinh tế và khó quên.">
-    </p>
-  </div>
-</section>
-
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="section dark">
-  <div class="container">
-    <h2 class="section-title"
-      data-en="Experience"
-      data-vi="Trải Nghiệm">
-      Experience
-    </h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3
-          data-en="Luxury Space"
-          data-vi="Không Gian Sang Trọng">
-          Luxury Space
-        </h3>
-        <p
-          data-en="Dark aesthetic with gold accents and cinematic lighting."
-          data-vi="Thẩm mỹ tối với điểm nhấn vàng và ánh sáng điện ảnh.">
-        </p>
-      </div>
-
-      <div class="card">
-        <h3
-          data-en="Elite Music"
-          data-vi="Âm Nhạc Đỉnh Cao">
-          Elite Music
-        </h3>
-        <p
-          data-en="Deep house, lounge and nightlife rhythm."
-          data-vi="Deep house, lounge và nhịp điệu nightlife.">
-        </p>
-      </div>
-
-      <div class="card">
-        <h3
-          data-en="Exclusive Service"
-          data-vi="Dịch Vụ Độc Quyền">
-          Exclusive Service
-        </h3>
-        <p
-          data-en="Personalized VIP experience."
-          data-vi="Trải nghiệm VIP cá nhân hóa.">
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
-  <div class="container narrow">
-    <h2 class="section-title"
-      data-en="Contact"
-      data-vi="Liên Hệ">
-      Contact
-    </h2>
-
-    <p class="section-text"
-      data-en="Reserve your night with us"
-      data-vi="Đặt chỗ cho đêm của bạn cùng chúng tôi">
-    </p>
-
-    <a href="mailto:contact@manhdeluxe.com" class="btn-outline">
-      contact@manhdeluxe.com
+    <a href="tel:0899996977" class="btn-primary"
+      data-en="Call to Reserve a Table"
+      data-vi="Gọi Trực Tiếp Đặt Bàn">
+      Gọi Trực Tiếp Đặt Bàn
     </a>
   </div>
 </section>
@@ -171,7 +84,6 @@
       el.innerHTML = el.getAttribute("data-" + lang);
     });
   }
-
   const savedLang = localStorage.getItem("lang") || "en";
   setLang(savedLang);
 </script>
