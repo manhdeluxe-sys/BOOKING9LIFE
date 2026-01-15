@@ -338,3 +338,50 @@ a {
     display: block;
   }
 }
+/* ===== MOBILE HEADER LAYOUT ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;   /* 👉 góc phải */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    text-align: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
