@@ -2,83 +2,78 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Giới Thiệu | Manh Deluxe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <title>Giới Thiệu | Manh Deluxe</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header class="header">
   <div class="container header-inner">
-
     <div class="logo">
       <a href="index.html">
         <img src="assets/logo.jpg" alt="Manh Deluxe Logo">
       </a>
     </div>
 
-   <nav class="nav">
-  <a href="index.html">Trang Chủ</a>
-  <a href="about.html">Giới Thiệu</a>
-  <a href="experience.html">Trải Nghiệm</a>
-  <a href="contact.html">Liên Hệ</a>
-</nav>
-
+    <nav class="nav">
+      <a href="index.html">Trang Chủ</a>
+      <a href="about.html" class="active">Giới Thiệu</a>
+      <a href="index.html#experience">Trải Nghiệm</a>
+      <a href="index.html#contact">Liên Hệ</a>
+    </nav>
 
     <div class="lang-switch">
-      <button onclick="setLang('en')">EN</button>
+      <button>EN</button>
       <span>|</span>
-      <button onclick="setLang('vi')">VI</button>
+      <button>VI</button>
     </div>
-
   </div>
 </header>
 
-<!-- ===== ABOUT PAGE ===== -->
-<section class="about-page">
+<section class="section dark">
+  <div class="container narrow">
+    <h2 class="section-title">Giới Thiệu</h2>
+
+    <p class="section-text">
+      Manh Deluxe là thương hiệu nightlife cao cấp tọa lạc tại trung tâm thành phố,
+      nơi hội tụ không gian sang trọng, âm nhạc đỉnh cao và dịch vụ thượng lưu.
+    </p>
+
+    <p class="section-text">
+      Với thiết kế ánh sáng điện ảnh, điểm nhấn vàng kim và phong cách phục vụ VIP,
+      Manh Deluxe mang đến trải nghiệm đêm tinh tế – khác biệt – đẳng cấp.
+    </p>
+
+    <p class="section-text">
+      📍 Địa chỉ: <strong>51 Bùi Thị Xuân, Quận 1, TP.HCM</strong><br>
+      📞 Đặt bàn: <strong>0899 996 977 (Zalo)</strong>
+    </p>
+  </div>
+</section>
+
+<section class="section">
   <div class="container">
+    <h2 class="section-title">Bản Đồ</h2>
 
-    <h1 class="section-title">Giới Thiệu</h1>
-
-    <div class="about-content">
-      <p>
-        <strong>Manh Deluxe</strong> là điểm đến nightlife cao cấp dành cho giới thượng lưu,
-        tọa lạc tại vị trí trung tâm sôi động <strong>51 Bùi Thị Xuân</strong>.
-        Không gian được thiết kế theo phong cách sang trọng – huyền bí,
-        kết hợp ánh sáng nghệ thuật và âm nhạc đỉnh cao.
-      </p>
-
-      <p>
-        Chúng tôi mang đến sự hòa quyện hoàn hảo giữa âm nhạc thời thượng,
-        dịch vụ VIP chuyên nghiệp và trải nghiệm cá nhân hóa.
-        Mỗi đêm tại Manh Deluxe là một hành trình tận hưởng phong cách sống đẳng cấp.
-      </p>
-
-      <p>
-        Từ Deep House, Lounge đến những đêm DJ Guest đặc biệt,
-        Manh Deluxe cam kết mang đến không gian giải trí tinh tế,
-        riêng tư và khác biệt.
-      </p>
-
-      <p class="about-address">
-        📍 <strong>Địa chỉ:</strong> 51 Bùi Thị Xuân
-      </p>
-    </div>
-
-    <div class="about-map">
+    <div class="map-box">
       <iframe
-        src="https://www.google.com/maps?q=51%20B%C3%B9i%20Th%E1%BB%8B%20Xu%C3%A2n&output=embed"
+        src="https://www.google.com/maps?q=51%20Bùi%20Thị%20Xuân&output=embed"
         width="100%"
         height="380"
-        style="border:0; border-radius:12px;"
+        style="border:0;"
+        allowfullscreen=""
         loading="lazy">
       </iframe>
     </div>
-
   </div>
 </section>
+
+<footer class="footer">
+  <p>© 2026 Manh Deluxe. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
