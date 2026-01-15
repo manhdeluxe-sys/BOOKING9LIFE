@@ -26,9 +26,10 @@
       </a>
     </div>
 
-<!-- MOBILE MENU ICON -->
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <!-- MOBILE MENU ICON -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
+    <!-- NAV -->
     <nav class="nav">
       <a href="index.html" data-en="Home" data-vi="Trang Chủ">Home</a>
       <a href="about.html" data-en="About" data-vi="Giới Thiệu">About</a>
@@ -80,20 +81,22 @@
 
 <!-- ===== LANGUAGE SCRIPT ===== -->
 <script>
-  function setLang(lang) {
-    localStorage.setItem("lang", lang);
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.innerHTML = el.getAttribute("data-" + lang);
-    });
-  }
-  const savedLang = localStorage.getItem("lang") || "en";
-  setLang(savedLang);
+function setLang(lang) {
+  localStorage.setItem("lang", lang);
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.innerHTML = el.getAttribute("data-" + lang);
+  });
+}
+const savedLang = localStorage.getItem("lang") || "en";
+setLang(savedLang);
 </script>
 
+<!-- ===== MOBILE MENU SCRIPT ===== -->
 <script>
 function toggleMenu() {
   document.querySelector('.nav').classList.toggle('active');
 }
 </script>
+
 </body>
 </html>
