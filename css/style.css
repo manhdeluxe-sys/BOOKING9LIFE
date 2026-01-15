@@ -198,3 +198,16 @@ a {
     padding: 70px 0;
   }
 }
+.logo img {
+  height: 40px;              /* PC */
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px rgba(201,162,77,0.5));
+}
+
+/* Mobile tối ưu */
+@media (max-width: 768px) {
+  .logo img {
+    height: 32px;
+  }
+}
